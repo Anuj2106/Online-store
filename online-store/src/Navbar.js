@@ -28,8 +28,11 @@ function BasicExample() {
             </Nav>
             <Nav.Link> <button className='btn btn-dark p-1 mx-1'> Login</button></Nav.Link>
             <Nav.Link> <button className='btn btn-dark p-1 ms-2'>Sign-Up</button></Nav.Link>
-            <Nav.Link> <button className='btn btn-dark p-1 ms-2'><IoCartOutline /></button></Nav.Link>
-            
+            <Nav.Link> <button className='btn btn-dark px-3 ms-1'><IoCartOutline/></button></Nav.Link>
+       
+          
+
+           
           </Navbar.Collapse>
         </Container>
       </Navbar>

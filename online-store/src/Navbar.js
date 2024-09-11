@@ -2,7 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { IoCartOutline } from "react-icons/io5";
 function BasicExample() {
     return (
       <Navbar expand="lg" className="bg-body-tertiary">
@@ -19,14 +19,17 @@ function BasicExample() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mx-auto">
+            <Nav className="mx-auto p-2">
               <Nav.Link href="#home">Shop</Nav.Link>
               <Nav.Link href="#link">Men</Nav.Link>
               <Nav.Link href="#link">Women</Nav.Link>
-              <Nav.Link href="#link"> </Nav.Link>
-              <Nav.Link href="#link">Women</Nav.Link>
-              
+              <Nav.Link href="#link"> Kids</Nav.Link>
+              <Nav.Link href="#link">Electronics</Nav.Link>
             </Nav>
+            <Nav.Link> <button className='btn btn-dark p-1 mx-1'> Login</button></Nav.Link>
+            <Nav.Link> <button className='btn btn-dark p-1 ms-2'>Sign-Up</button></Nav.Link>
+            <Nav.Link> <button className='btn btn-dark p-1 ms-2'><IoCartOutline /></button></Nav.Link>
+            
           </Navbar.Collapse>
         </Container>
       </Navbar>

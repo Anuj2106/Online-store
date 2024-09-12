@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
-import  img from '../../images/model-img.png'
+import  img from '../images/model-img.png'
+import Popular from '../Components/Popular';
 const Home = () => {
   return (
    <>
@@ -22,6 +23,8 @@ const Home = () => {
        
    </div>
    </section>
+   <Popular/>
+
    </>
   )
 }

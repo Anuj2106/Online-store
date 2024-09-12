@@ -1,5 +1,5 @@
 import React from 'react'
-import Home from './Pages/Home/Home';
+import Home from './Pages/Home';
 import Navbar from './Navbar'
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Shopcatigorie from './Pages/Shopcatigorie';

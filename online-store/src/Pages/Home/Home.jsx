@@ -1,10 +1,10 @@
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import  img from '../../images/model-img.png'
-const Main = () => {
+const Home = () => {
   return (
    <>
-   <section className="banner">
+ <section className="banner">
    <div className="container-fluid mt-5">
     <div className="row ">
         <div className="col-12 col-lg-6 mt-5 text-center ">
@@ -26,4 +26,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Home

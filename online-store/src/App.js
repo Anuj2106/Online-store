@@ -1,9 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './Pages/Home/Home';
+import Routerpage from './Routerpage';
+
 function App() {
   return (
     <>
-  <Home/>
+   <Routerpage/>
+
     </>
   );
 }

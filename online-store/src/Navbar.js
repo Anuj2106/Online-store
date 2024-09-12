@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { IoCartOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 function BasicExample() {
     return (
       <Navbar expand="lg" className="bg-body-tertiary">
@@ -20,15 +21,15 @@ function BasicExample() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto p-2">
-              <Nav.Link href="#home">Shop</Nav.Link>
-              <Nav.Link href="#link">Men</Nav.Link>
-              <Nav.Link href="#link">Women</Nav.Link>
-              <Nav.Link href="#link"> Kids</Nav.Link>
-              <Nav.Link href="#link">Electronics</Nav.Link>
+              <Nav.Link > <Link to='/' > Shop</Link></Nav.Link>
+              <Nav.Link ><Link to='/men'>Men</Link></Nav.Link>
+              <Nav.Link > <Link to='/women'>Women</Link></Nav.Link>
+              <Nav.Link > <Link  to='/kids'>Kids</Link> </Nav.Link>
+              {/* <Nav.Link > Electronics</Nav.Link> */}
             </Nav>
-            <Nav.Link> <button className='btn btn-dark p-1 mx-1'> Login</button></Nav.Link>
-            <Nav.Link> <button className='btn btn-dark p-1 ms-2'>Sign-Up</button></Nav.Link>
-            <Nav.Link> <button className='btn btn-dark px-3 ms-1'><IoCartOutline/></button></Nav.Link>
+            <Nav.Link> <button className='btn btn-dark p-1 mx-1'> <Link to='/login'>Login</Link> </button></Nav.Link>
+            <Nav.Link> <button className='btn btn-dark p-1 ms-2'>  <Link to='/signup'> Sign-Up</Link></button></Nav.Link>
+            <Nav.Link> <button className='btn btn-dark px-3 ms-1'> <Link to='/cart'> <IoCartOutline/></Link></button></Nav.Link>
        
           
 

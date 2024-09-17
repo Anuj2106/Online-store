@@ -1,0 +1,334 @@
+
+
+const all_product = [
+  // Men's Clothing (12 items)
+  {
+    id: 1,
+    category: "men",
+    name: "Men's Classic T-Shirt",
+    image: 'https://5.imimg.com/data5/ANDROID/Default/2020/8/XG/EV/BC/108865717/product-jpeg-250x250.jpg', // Example link
+    oldPrice: '$40.00',
+    newPrice: '$25.00',
+    description: 'A soft, classic-fit t-shirt made of 100% cotton. Ideal for casual wear.',
+  },
+  {
+    id: 2,
+    category: "men",
+    name: "Men's Winter Jacket",
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGiEdUqLz52vuKtXxG8K7LL2OQjEbHw49BfQ&s', // Example link
+    oldPrice: '$150.00',
+    newPrice: '$120.00',
+    description: 'Warm and durable winter jacket, designed for cold weather.',
+  },
+  {
+    id: 3,
+    category: "men",
+    name: "Men's Athletic Shorts",
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXgBciKyW7bg_uoSyeot_FZcrYRd9PI4kSkw&s', // Example link
+    oldPrice: '$60.00',
+    newPrice: '$45.00',
+    description: 'Breathable and comfortable athletic shorts for workouts.',
+  },
+  {
+    id: 4,
+    category: "men",
+    name: "Men's Dress Shoes",
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG6Y3kCnKAujh7BD465O-vXw6kCsVAffN5XHtrAJf4gUhSYWXhWp5G5U19-ecWCHhW1LQ&usqp=CAU', // Example link
+    oldPrice: '$120.00',
+    newPrice: '$85.00',
+    description: 'Stylish dress shoes, perfect for formal events and office wear.',
+  },
+  {
+    id: 5,
+    category: "men",
+    name: "Men's Hoodie",
+    image: 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/680797/47/mod01/fnd/IND/fmt/png/Small-Logo-Men', // Example link
+    oldPrice: '$75.00',
+    newPrice: '$55.00',
+    description: 'Comfortable hoodie made from a soft fabric blend, great for casual wear.',
+  },
+  {
+    id: 6,
+    category: "men",
+    name: "Men's Casual Sneakers",
+    image: 'https://m.media-amazon.com/images/I/81K64GgXMcL._AC_UY1000_.jpg', // Example link
+    oldPrice: '$85.00',
+    newPrice: '$65.00',
+    description: 'Lightweight casual sneakers, perfect for everyday wear.',
+  },
+  {
+    id: 7,
+    category: "men",
+    name: "Men's Leather Belt",
+    image: 'https://m.media-amazon.com/images/I/81fhnNyucxL._AC_UY1100_.jpg', // Example link
+    oldPrice: '$45.00',
+    newPrice: '$30.00',
+    description: 'A classic leather belt, suitable for both casual and formal outfits.',
+  },
+  {
+    id: 8,
+    category: "men",
+    name: "Men's Formal Blazer",
+    image: 'https://5.imimg.com/data5/SELLER/Default/2024/3/403062890/EP/WH/LP/13140038/men-formal-blazer.png', // Example link
+    oldPrice: '$200.00',
+    newPrice: '$150.00',
+    description: 'Elegant blazer that complements any formal attire.',
+  },
+  {
+    id: 9,
+    category: "men",
+    name: "Men's Running Shoes",
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLi4wVOeGvGsQXd--qMB8ZwEmoqoAbMan17w&s', // Example link
+    oldPrice: '$100.00',
+    newPrice: '$70.00',
+    description: 'Comfortable running shoes, ideal for sports and training.',
+  },
+  {
+    id: 10,
+    category: "men",
+    name: "Men's Sunglasses",
+    image: 'https://5.imimg.com/data5/LM/NU/MY-36086933/men-sunglasses.jpg', // Example link
+    oldPrice: '$80.00',
+    newPrice: '$55.00',
+    description: 'Stylish sunglasses, perfect for protection against sunlight.',
+  },
+  {
+    id: 11,
+    category: "men",
+    name: "Men's Gym Vest",
+    image: 'https://aestheticnation.co.in/cdn/shop/products/RICH203_1.jpg?v=1660290286', // Example link
+    oldPrice: '$35.00',
+    newPrice: '$25.00',
+    description: 'Lightweight gym vest for maximum comfort during workouts.',
+  },
+  {
+    id: 12,
+    category: "men",
+    name: "Men's Slim Fit Jeans",
+    image: 'https://levi.in/cdn/shop/files/213010060_01_Style_Shot_85744283-4d87-4612-bfc5-b66fa7aa3061.jpg?v=1712741780&width=1445', // Example link
+    oldPrice: '$70.00',
+    newPrice: '$50.00',
+    description: 'Stylish slim-fit jeans made from durable denim.',
+  },
+
+  // Women's Clothing (12 items)
+  {
+    id: 13,
+    category: "women",
+    name: "Women's Summer Dress",
+    image: 'https://m.media-amazon.com/images/I/81Qg+OHbk5L._AC_UY1100_.jpg', // Example real link
+    newPrice: '$65.00',
+    description: 'Lightweight and comfortable summer dress with floral prints.',
+  },
+  {
+    id: 14,
+    category: "women",
+    name: "Women's Blazer",
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS02m9qgtne7mxgOWWH-DI3Hm76EedmAiNS9Q&s', // Example link
+    oldPrice: '$140.00',
+    newPrice: '$100.00',
+    description: 'A stylish blazer, perfect for office wear or formal events.',
+  },
+  {
+    id: 15,
+    category: "women",
+    name: "Women's Handbag",
+    image: 'https://zouk.co.in/cdn/shop/files/Women_s_Office_Bag_8b3268e9-d09a-4b9f-a5ae-15cb9c1f6fd9.jpg?v=1724221231&width=2048', // Example link
+    oldPrice: '$80.00',
+    newPrice: '$55.00',
+    description: 'Elegant handbag, made from high-quality leather.',
+  },
+  {
+    id: 16,
+    category: "women",
+    name: "Women's Heels",
+    image: 'https://m.media-amazon.com/images/I/61ytyqI4sNL._AC_UY1000_.jpg', // Example link
+    oldPrice: '$120.00',
+    newPrice: '$90.00',
+    description: 'Chic and comfortable heels for formal and semi-formal occasions.',
+  },
+  {
+    id: 17,
+    category: "women",
+    name: "Women's Leather Boots",
+    image: 'https://teakwoodleathers.com/cdn/shop/files/T_SH_3800_BL_1_1080x.jpg?v=1685526321', // Example link
+    oldPrice: '$180.00',
+    newPrice: '$140.00',
+    description: 'Stylish and durable leather boots, perfect for winter wear.',
+  },
+  {
+    id: 18,
+    category: "women",
+    name: "Women's Skinny Jeans",
+    image: 'https://levi.in/cdn/shop/files/594580026_01_Style_Shot_5de9fdeb-a5ab-42ee-ac45-92a4c1e4548e.jpg?v=1712741893', // Example link
+    oldPrice: '$70.00',
+    newPrice: '$50.00',
+    description: 'Comfortable skinny jeans that offer a perfect fit.',
+  },
+  {
+    id: 19,
+    category: "women",
+    name: "Women's Sunglasses",
+    image: 'https://yellowchimes.com/cdn/shop/products/71LECcYMuNL.jpg?v=1724931371', // Example link
+    oldPrice: '$100.00',
+    newPrice: '$70.00',
+    description: 'Chic sunglasses that offer full protection against the sun.',
+  },
+  {
+    id: 20,
+    category: "women",
+    name: "Women's Yoga Pants",
+    image: 'https://blissclub.com/cdn/shop/products/Thumbnail-DustyRose-Cottonleggings_600x.jpg?v=1665750439', // Example link
+    oldPrice: '$45.00',
+    newPrice: '$30.00',
+    description: 'Flexible yoga pants, perfect for fitness and casual wear.',
+  },
+  {
+    id: 21,
+    category: "women",
+    name: "Women's Cardigan",
+    image: 'https://assets.ajio.com/medias/sys_master/root/20231102/YgHK/65438ee8ddf7791519695213/-473Wx593H-442353510-black-MODEL.jpg', // Example link
+    oldPrice: '$65.00',
+    newPrice: '$45.00',
+    description: 'A warm and cozy cardigan, perfect for casual wear.',
+  },
+  {
+    id: 22,
+    category: "women",
+    name: "Women's Leather Jacket",
+    image: 'https://www.saintg.in/cdn/shop/files/01_4c2431ef-ae64-4315-b7e3-8fc5ee9ea8bb.jpg?v=1712727239', // Example link
+    oldPrice: '$200.00',
+    newPrice: '$150.00',
+    description: 'Stylish leather jacket, ideal for adding an edge to any outfit.',
+  },
+  {
+    id: 23,
+    category: "women",
+    name: "Women's Tote Bag",
+    image: 'https://accessorizelondon.in/cdn/shop/products/MN-99025434001_1_72ca2efb-f1ee-4d41-8c44-eca28382a554.jpg?crop=center&height=2000&v=1669359613&width=2000', // Example link
+    oldPrice: '$90.00',
+    newPrice: '$65.00',
+    description: 'Spacious and stylish tote bag, perfect for everyday use.',
+  },
+  {
+    id: 24,
+    category: "women",
+    name: "Women's Running Shoes",
+    image: 'https://brooksrunningindia.com/cdn/shop/files/120381_037_L_Adrenaline_GTS_23_1200x1200.png?v=1706092850', // Example link
+    oldPrice: '$120.00',
+    newPrice: '$90.00',
+    description: 'Lightweight running shoes, designed for maximum comfort.',
+  },
+
+  // Kids' Clothing (12 items)
+  {
+    id: 25,
+    category: "kids",
+    name: "Kids' T-Shirt",
+    image: 'https://src1.ilogo.in/images/products/8471/custom-boys-t-shirts.webp', // Example link
+    oldPrice: '$30.00',
+    newPrice: '$20.00',
+    description: 'A colorful and playful t-shirt made from soft cotton.',
+  },
+  {
+    id: 26,
+    category: "kids",
+    name: "Kids' Denim Shorts",
+    image: 'https://5.imimg.com/data5/NE/DS/MY-22676664/kids-denim-shorts.jpg', // Example link
+    oldPrice: '$40.00',
+    newPrice: '$25.00',
+    description: 'Stylish denim shorts, perfect for outdoor play.',
+  },
+  {
+    id: 27,
+    category: "kids",
+    name: "Kids' Sneakers",
+    image: 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/391873/01/sv01/fnd/IND/fmt/png/Hobbes-Kids', // Example link
+    oldPrice: '$50.00',
+    newPrice: '$35.00',
+    description: 'Comfortable and durable sneakers for everyday adventures.',
+  },
+  {
+    id: 28,
+    category: "kids",
+    name: "Kids' Hoodie",
+    image: 'https://m.media-amazon.com/images/I/61x3qC+n2RL._AC_UY1100_.jpg', // Example link
+    oldPrice: '$45.00',
+    newPrice: '$30.00',
+    description: 'Warm hoodie for chilly days, made from soft and cozy fabric.',
+  },
+  {
+    id: 29,
+    category: "kids",
+    name: "Kids' Rain Jacket",
+    image: 'https://m.media-amazon.com/images/I/71dNQapeo-L._AC_UY1100_.jpg', // Example link
+    oldPrice: '$60.00',
+    newPrice: '$40.00',
+    description: 'Waterproof rain jacket, perfect for rainy weather.',
+  },
+  {
+    id: 30,
+    category: "kids",
+    name: "Kids' Sandals",
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA75hc_CeasWqYxAYYp3Q92oG0wHkWFDFZqQ&s', // Example link
+    oldPrice: '$25.00',
+    newPrice: '$15.00',
+    description: 'Lightweight sandals, ideal for summer activities.',
+  },
+  {
+    id: 31,
+    category: "kids",
+    name: "Kids' Pajamas",
+    image: 'https://www.momshome.in/cdn/shop/files/PinkGiraffe_4.jpg?v=1716813130', // Example link
+    oldPrice: '$35.00',
+    newPrice: '$20.00',
+    description: 'Cozy pajamas with fun prints, perfect for bedtime.',
+  },
+  {
+    id: 32,
+    category: "kids",
+    name: "Kids' Winter Coat",
+    image: 'https://5.imimg.com/data5/SELLER/Default/2023/1/KN/YD/SC/182376891/kids-winter-clothes.jpeg', // Example link
+    oldPrice: '$80.00',
+    newPrice: '$60.00',
+    description: 'Warm and comfortable winter coat for cold days.',
+  },
+  {
+    id: 33,
+    category: "kids",
+    name: "Kids' Beanie",
+    image: 'https://images.meesho.com/images/products/292680069/gcikk_512.webp', // Example link
+    oldPrice: '$20.00',
+    newPrice: '$10.00',
+    description: 'Soft beanie to keep your child warm during winter.',
+  },
+  {
+    id: 34,
+    category: "kids",
+    name: "Kids' Swimsuit",
+    image: 'https://assets.ajio.com/medias/sys_master/root/20230526/tj8r/6470b4a442f9e729d7ec1068/-473Wx593H-466122025-blue-MODEL3.jpg', // Example link
+    oldPrice: '$40.00',
+    newPrice: '$25.00',
+    description: 'Bright and fun swimsuit for pool and beach days.',
+  },
+  {
+    id: 35,
+    category: "kids",
+    name: "Kids' Backpack",
+    image: 'https://assets.pkimgs.com/pkimgs/ab/images/i/202434/0004/images/mobile/shop/backpacks-luggage/6-24-upd/bp-age-1.jpg', // Example link
+    oldPrice: '$50.00',
+    newPrice: '$30.00',
+    description: 'Durable backpack with plenty of storage for school supplies.',
+  },
+  {
+    id: 36,
+    category: "kids",
+    name: "Kids' Winter Boots",
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnRlbE7mYMDIBGW9TTWGM_8tTu-gQm5CpoHA&s  ', // Example link
+    oldPrice: '$75.00',
+    newPrice: '$50.00',
+    description: 'Warm winter boots to keep your child’s feet cozy.',
+  }
+];
+export default all_product;
+

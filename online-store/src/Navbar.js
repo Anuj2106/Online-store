@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { IoCartOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 function BasicExample() {
+  const[menu,setMenu]=useState("shop");
     return (
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
@@ -21,10 +22,10 @@ function BasicExample() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto p-2">
-              <Nav.Link > <Link to='/' > Shop</Link></Nav.Link>
-              <Nav.Link ><Link to='/men'>Men</Link></Nav.Link>
-              <Nav.Link > <Link to='/women'>Women</Link></Nav.Link>
-              <Nav.Link > <Link  to='/kids'>Kids</Link> </Nav.Link>
+              <Nav.Link onClick={()=>{setMenu("shop")}} > <Link to='/' > Shop</Link> {menu==="shop"?<hr/>:<></>}</Nav.Link>
+              <Nav.Link onClick={()=>{setMenu("men")}} ><Link to='/men'>Men</Link> {menu==="men"?<hr/>:<></>} </Nav.Link>
+              <Nav.Link onClick={()=>{setMenu("women")}} > <Link to='/women'>Women</Link> {menu==="women"?<hr/>:<></>}</Nav.Link>
+              <Nav.Link  onClick={()=>{setMenu("kids")}}> <Link  to='/kids'>Kids</Link>{menu==="kids"?<hr/>:<></>} </Nav.Link>
               {/* <Nav.Link > Electronics</Nav.Link> */}
             </Nav>
             <Nav.Link> <button className='btn btn-dark p-1 mx-1'> <Link to='/login'>Login</Link> </button></Nav.Link>

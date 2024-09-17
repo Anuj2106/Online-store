@@ -3,19 +3,19 @@ const  data_product  = [
   // Men's clothing
   {
     id: 1,
-    name: 'Men’s Casual Shirt',
-    image: 'https://img0.junaroad.com/uiproducts/19410013/zoom_0-1677344181.jpg', // Example real link
-    oldPrice: '$45.00',
-    newPrice: '$30.00',
-    description: 'Elegant formal shirt made from breathable cotton fabric. Ideal for business meetings and formal occasions.',
+    name: "Women's Summer Floral Dress",
+    image: 'https://m.media-amazon.com/images/I/81Gzc9GJ+uL._AC_UY1100_.jpg', // Example link
+    oldPrice: '$90.00',
+    newPrice: '$65.00',
+    description: 'A breezy summer dress with a floral print, perfect for daytime events or casual outings. Lightweight and comfortable.',
   },
   {
     id: 2,
-    name: 'Men’s Denim Jacket',
-    image: 'https://rukminim2.flixcart.com/image/850/1000/xif0q/jacket/x/h/p/xl-nmnt-7004-montrez-original-imag5t3nfpbqhgrx-bb.jpeg?q=90&crop=false', // Example real link
-    oldPrice: '$120.00',
-    newPrice: '$85.00',
-    description: 'A stylish and comfortable casual jacket perfect for everyday wear. Made from premium materials for durability and warmth.',
+    name: "Women's High-Waist Jeans",
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-opRJPOo_zC66ISkqlaYq-sQgoNydGeog5Q&s', // Example link
+    oldPrice: '$80.00',
+    newPrice: '$60.00',
+    description: 'Classic high-waist jeans that provide a flattering fit. Durable denim, ideal for daily wear with any outfit.',
   },
   
   // Women's clothing

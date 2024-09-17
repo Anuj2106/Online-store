@@ -1,22 +1,22 @@
 import React from 'react'
+import latestCollection from '../../api/latestcollect'
 import Container from 'react-bootstrap/esm/Container'
-import data_product from '../api/data_porduct'
-import Item from './Item/Item'
-const Popular = () => {
+import Item from '../Item/Item'
+const NewCollect = () => {
   return (
    <>
-    <section className="popular">
+<section className="popular">
       <Container fluid className='mt-5'>
       <div className="row">
         <div className="col-12">
-          <h1 className='text-center text-decoration-underline '>Popular In Women
+          <h1 className='text-center text-decoration-underline '>Latest Collection 
           </h1>
         </div>
       </div>
       <div className="row">
        
         {
-          data_product.map((item)=>{
+          latestCollection.map((item)=>{
              return <Item key={1} id={item.id} name={item.name } image={item.image} newPrize={item.newPrice} oldPrize={item.oldPrice} description={item.description}/>
           })
         }
@@ -29,4 +29,4 @@ const Popular = () => {
   )
 }
 
-export default Popular
+export default NewCollect

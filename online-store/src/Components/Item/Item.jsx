@@ -5,8 +5,8 @@ import './Item.css'
 const Item = (props) => {
   return (
     <>
-      <div className="col-12 col-lg-3 mx-auto Card">
-    <Card style={{ width: '20rem'  }} className='shadow-lg p-3 mb-5 bg-body rounded'>
+      <div className="col-12 col-lg-3 mx-auto mt-5 Card">
+    <Card style={{ width: '20rem' , height:"40rem" }} className='shadow-lg p-3 mb-5  bg-body rounded'>
       <Card.Img variant="top" src={props.image} style={{ height: '23rem'  }} />
       <Card.Body >
         <Card.Title> {props.name}</Card.Title>

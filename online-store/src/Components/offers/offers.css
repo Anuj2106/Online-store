@@ -1,0 +1,26 @@
+
+.banner{
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.banner h1{
+  font-size: 4rem;
+  font-weight: bolder;   
+}
+.banner h5{
+  font-size: 3rem;
+  font-weight: 500;
+}
+.banner h6{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 2rem !important;
+  }
+.banner button{
+    height: 3rem;
+    width: 15rem;
+    border-radius: 25%;
+    margin-top: 2rem !important;
+}

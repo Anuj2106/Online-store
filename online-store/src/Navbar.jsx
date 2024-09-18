@@ -28,8 +28,7 @@ function BasicExample() {
               <Nav.Link  onClick={()=>{setMenu("kids")}}> <Link  to='/kids'>Kids</Link>{menu==="kids"?<hr/>:<></>} </Nav.Link>
               {/* <Nav.Link > Electronics</Nav.Link> */}
             </Nav>
-            <Nav.Link> <button className='btn btn-dark p-1 mx-1'> <Link to='/login'>Login</Link> </button></Nav.Link>
-            <Nav.Link> <button className='btn btn-dark p-1 ms-2'>  <Link to='/signup'> Sign-Up</Link></button></Nav.Link>
+            <Nav.Link> <button className='btn btn-dark p-1 mx-1'> <Link to='/login'>Login</Link> </button></Nav.Link> 
             <Nav.Link> <button className='btn btn-dark px-3 ms-1'> <Link to='/cart'> <IoCartOutline/></Link></button></Nav.Link>
        
           

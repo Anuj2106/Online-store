@@ -6,9 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import ShopContextProvider from './Context/ShopContext'; // Correct import of the ShopContextProvider
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-  <ShopContextProvider> {/* Use ShopContextProvider here, not ShopContext.Provider */}
-    <App />
+  <ShopContextProvider> {/* Wrap the App inside the ShopContextProvider */}
+    <App /> {/* App and all its child components will now have access to ShopContext */}
   </ShopContextProvider>
 );
 

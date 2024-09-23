@@ -24,8 +24,8 @@ const Item = (props) => {
             </Card.Text>
           </Card.Body>
           <Card.Body className='d-flex justify-content-evenly'>
-            <p><strike>{props.oldPrize}</strike></p>
-            <p className='text-danger'>{props.newPrize}</p>
+            <p><strike> ${props.oldPrize}</strike></p>
+            <p className='text-danger'> ${props.newPrize}</p>
           </Card.Body>
         </Card>
       </div>

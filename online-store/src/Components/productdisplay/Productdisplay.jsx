@@ -33,8 +33,8 @@ const Productdisplay = ({ product }) => {
           (125)
         </div>
         <div className="prizelist d-flex flex-row justify-content-start mt-4">
-          <h5 className='mx-2'><strike>{product.oldPrice}</strike></h5>
-          <h5  className='text-danger fw-bolder'>{product.newPrice}</h5>
+          <h5 className='mx-2'><strike> $ {product.oldPrice}</strike></h5>
+          <h5  className='text-danger fw-bolder'> ${product.newPrice}</h5>
         </div>
         <br />
         <h6>{product.description}</h6>
